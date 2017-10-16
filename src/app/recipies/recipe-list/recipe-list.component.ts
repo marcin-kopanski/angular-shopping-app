@@ -8,7 +8,9 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-  recipes: Recipe[] = [];
+  recipes: Recipe[] = [
+    new Recipe('A test recipe', 'This is a test description', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Thai_green_chicken_curry_and_roti.jpg/1200px-Thai_green_chicken_curry_and_roti.jpg')
+  ];
 
   constructor() { }
 
